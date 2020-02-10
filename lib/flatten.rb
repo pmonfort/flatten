@@ -2,6 +2,8 @@
 
 class Flatten
   def process(array)
+    return 'Wrong param type, an Array required' unless array.instance_of? Array
+
     collect(array)
   end
 
